@@ -24,6 +24,22 @@ Perusahaan melakukan kontrak dengan perusahaan konsultan pada bidang data untuk 
 *   Dataset merupakan data jumlah penyewaan sepeda pada tahun 2011-2012 di Amerika
 *   Setiap baris data merepresentasikan informasi terkait penyewaan sepeda per hari
 
+**Attributes Information**
+
+| **Attribute** | **Data Type** | **Description** |
+| --- | --- | --- |
+| dteday | Datetime | date |
+| hum | Float | Normalized humidity. The values are divided to 100 (max) |
+| weathersit | Integer |  weather  <br>1 =  Clear, Few clouds, Partly cloudy, Partly cloudy<br>2 = Mist + Cloudy, Mist + Broken clouds, Mist + Few clouds, Mist<br>3 = Light Snow, Light Rain + Thunderstorm + Scattered clouds, Light Rain +   Scattered clouds<br>4 = Heavy Rain + Ice Pallets + Thunderstorm + Mist, Snow + Fog|
+| holiday | Integer | holiday or not |
+| season | Integer | season <br>1: winter<br>2: spring<br>3: summer<br>4: fall |
+| atemp | Float | Normalized feeling temperature in Celsius. The values are derived via (t-tmin)/(tmax-tmin), tmin=-16, t_max=+50 (only in hourly scale) |
+| temp | Float | Normalized temperature in Celsius. The values are derived via (t-tmin)/(tmax-tmin), tmin=-8, t_max=+39 (only in hourly scale) |
+| hr | Integer | hour (0 to 23) |
+| casual | Integer | count of casual users |
+| registered | Integer | count of registered users |
+| cnt | Integer | count of total rental bikes including both casual and registered |
+
 # Data Preprocessing
 
 # Modeling
