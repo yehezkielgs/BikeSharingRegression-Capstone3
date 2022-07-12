@@ -75,8 +75,8 @@ Perusahaan melakukan kontrak dengan perusahaan konsultan pada bidang data untuk 
 
 Hal-hal yang dapat dilakukan untuk mengembangkan model agar lebih baik lagi, seperti:
 
-1. Melakukan pengelompokan terhadap prediksi yang nilai error yang tinggi baik yang bersifat overestimation dan underestimation. Selanjutnya, kita dapat mmemeriksa hubungan antara error tersebut dengan tiap variabel independen. Hal tersebut dilakukan untuk mengetahui variabel mana saja dan aspek apa yang menyebabkan model menghasilkan error yang tinggi.
+* Melakukan pengelompokan terhadap prediksi yang nilai error yang tinggi baik yang bersifat overestimation dan underestimation. Selanjutnya, kita dapat mmemeriksa hubungan antara error tersebut dengan tiap variabel independen. Hal tersebut dilakukan untuk mengetahui variabel mana saja dan aspek apa yang menyebabkan model menghasilkan error yang tinggi.
 <br><br>   
-1. Model memerlukan penambahan fitur yang lebih korelatif dengan jumlah rental sepeda, terkait karakteristik perilaku pengguna, lokasi, dan biaya rental sepeda. Selain itu, penambahan data terkini terkait rental sepeda juga dapat meningkatkan kualitas model.
+* Model memerlukan penambahan fitur yang lebih korelatif dengan jumlah rental sepeda, terkait karakteristik perilaku pengguna, lokasi, dan biaya rental sepeda. Selain itu, penambahan data terkini terkait rental sepeda juga dapat meningkatkan kualitas model.
 <br><br>   
 
