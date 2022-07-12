@@ -5,7 +5,7 @@ Capstone Project merupakan salah satu project yang diberikan sebagai penilaian t
 Pada Capstone project ini, saya ditugaskan untuk membangun sebuah model machine learning regresi dengan menggunakan data Bike Sharing, yaitu data jasa penyewaan sepeda.
 
 # Contents
------------
+--
 1. Business Problem Understanding
 2. Data Understanding
 3. Data Preprocessing
