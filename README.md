@@ -49,17 +49,34 @@ Perusahaan melakukan kontrak dengan perusahaan konsultan pada bidang data untuk 
 * Melakukan encoding pada feature weathersit, season, dan weekday
 
 # Modeling
-Crossvalidation Benchmark model:
-| cnt | Integer | count of total rental bikes including both casual and registered |
-| Model | Mean_RMSE | Std_RMSE | Mean_MAE | Std_MAE | Mean_MAPE | Std_MAPE |
-| --- | --- | --- | --- | --- | --- | --- | --- |
-| Linear Regression | -144.595706 | 5.330292 | -98.243649 | 3.776170 | -1.381328| 0.066783 |
-|KNN Regressor|	-106.786115|	5.938299|	-68.723053|	3.020746|	-1.173354|	0.107881|
-|DecisionTree Regressor|	-66.614069	|3.828002|	-39.279856|	2.016847	-0.419450|	0.020103|
-|RandomForest Regressor|	-49.064595|	3.641531|	-29.632434|	1.924376|	-0.304830|	0.013771|
-|XGBoost Regressor|	-43.589906|	2.925081|	-26.596861|	1.486055|	-0.266885|	0.014754|
 
+**Crossvalidation Benchmark model:**
+| Model                  | Mean_RMSE   | Std_RMSE | Mean_MAE   | Std_MAE  | Mean_MAPE | Std_MAPE | 
+|------------------------|-------------|----------|------------|----------|-----------|----------| 
+| Linear Regression      | -144.595706 | 5.330292 | -98.243649 | 3.776170 | -1.381328 | 0.066783 | 
+| KNN Regressor          | -106.786115 | 5.938299 | -68.723053 | 3.020746 | -1.173354 | 0.107881 | 
+| DecisionTree Regressor | -66.614069  | 3.828002 | -39.279856 | 2.016847 | -0.419450 | 0.020103 | 
+| RandomForest Regressor | -49.064595  | 3.641531 | -29.632434 | 1.924376 | -0.304830 | 0.013771 | 
+| XGBoost Regressor      | -43.589906  | 2.925081 | -26.596861 | 1.486055 | -0.266885 | 0.014754 | 
+
+**Predict to Test Set:**
+| Model        | RMSE      | MAE       | MAPE     | 
+|--------------|-----------|-----------|----------| 
+| RandomForest | 43.667138 | 26.880957 | 0.297829 | 
+| XGB Before Tuning          | 39.528571 | 24.836749 | 0.255728 |		
+| XGB AFter Tuning          | 42.987601 | 27.080498 | 0.390707 |
 
 # Conclusion
 
+*   Berdasarkan pemodelan yang telah dilakukan, jam merupakan fitur yang paling berpengaruh terhadap jumlah rental sepeda, dilanjutkan dengan tahun dan hari.
+*   Metrik evaluasi yang digunakan pada model adalah nilai RMSE, MAE & MAPE. Jika ditinjau dari nilai RMSE yang dihasilkan oleh model, yaitu sebesar 42.9, kita dapat menyimpulkan bahwa bila nanti model yang kita buat ini digunakan untuk memperkirakan jumlah rental sepeda baru pada rentang nilai seperti yang dilatih terhadap model (maksimal jumlah rental sepeda 645), maka perkiraan jumlah rental sepedanya rata-rata akan meleset kurang lebih sebesar 42.9 dari jumlah rental sepeda yang mungkin seharusnya. Tetapi, tidak menutup kemungkinan juga prediksinya meleset lebih jauh karena bias yang dihasilkan model masih cukup tinggi bila dilihat dari visualisasi antara jumlah rental sepeda aktual dan prediksi.
+
 # Recommendation
+
+Hal-hal yang dapat dilakukan untuk mengembangkan model agar lebih baik lagi, seperti:
+
+1. Melakukan pengelompokan terhadap prediksi yang nilai error yang tinggi baik yang bersifat overestimation dan underestimation. Selanjutnya, kita dapat mmemeriksa hubungan antara error tersebut dengan tiap variabel independen. Hal tersebut dilakukan untuk mengetahui variabel mana saja dan aspek apa yang menyebabkan model menghasilkan error yang tinggi.
+<br><br>   
+1. Model memerlukan penambahan fitur yang lebih korelatif dengan jumlah rental sepeda, terkait karakteristik perilaku pengguna, lokasi, dan biaya rental sepeda. Selain itu, penambahan data terkini terkait rental sepeda juga dapat meningkatkan kualitas model.
+<br><br>   
+
