@@ -50,12 +50,12 @@ Perusahaan melakukan kontrak dengan perusahaan konsultan pada bidang data untuk 
 
 # Modeling
 Crossvalidation Benchmark model:
-Model |	Mean_RMSE	|Std_RMSE|	Mean_MAE|Std_MAE|Mean_MAPE|Std_MAPE
-Linear Regression|	-144.595706|	5.330292|	-98.243649|	3.776170|	-1.381328|	0.066783
-KNN Regressor|	-106.786115|	5.938299|	-68.723053|	3.020746|	-1.173354|	0.107881
-DecisionTree Regressor|	-66.614069	|3.828002|	-39.279856|	2.016847	-0.419450|	0.020103
-RandomForest Regressor|	-49.064595|	3.641531|	-29.632434|	1.924376|	-0.304830|	0.013771
-XGBoost Regressor|	-43.589906|	2.925081|	-26.596861|	1.486055|	-0.266885|	0.014754
+|Model |	Mean_RMSE	|Std_RMSE|	Mean_MAE|Std_MAE|Mean_MAPE|Std_MAPE|
+|Linear Regression|	-144.595706|	5.330292|	-98.243649|	3.776170|	-1.381328|	0.066783|
+|KNN Regressor|	-106.786115|	5.938299|	-68.723053|	3.020746|	-1.173354|	0.107881|
+|DecisionTree Regressor|	-66.614069	|3.828002|	-39.279856|	2.016847	-0.419450|	0.020103|
+|RandomForest Regressor|	-49.064595|	3.641531|	-29.632434|	1.924376|	-0.304830|	0.013771|
+|XGBoost Regressor|	-43.589906|	2.925081|	-26.596861|	1.486055|	-0.266885|	0.014754|
 
 
 # Conclusion
