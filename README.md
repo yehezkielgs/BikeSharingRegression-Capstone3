@@ -50,7 +50,7 @@ Perusahaan melakukan kontrak dengan perusahaan konsultan pada bidang data untuk 
 
 # Modeling
 Crossvalidation Benchmark model:
-|Model |	Mean_RMSE	|Std_RMSE|	Mean_MAE|Std_MAE|Mean_MAPE|Std_MAPE|
+| Model | Mean_RMSE | Std_RMSE | Mean_MAE | Std_MAE | Mean_MAPE | Std_MAPE |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 |Linear Regression|	-144.595706|	5.330292|	-98.243649|	3.776170|	-1.381328|	0.066783|
 |KNN Regressor|	-106.786115|	5.938299|	-68.723053|	3.020746|	-1.173354|	0.107881|
